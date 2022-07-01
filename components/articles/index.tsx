@@ -1,44 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import * as articleService from "../../services/articles";
 import { IArticle } from "../../types";
-import Image from 'next/image'
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+import styles from "../../styles/Home.module.css";
 
- const Articles = () => {
-    const [items, setItems] = useState<IArticle[]>([]);
-    useEffect(()=>{    
-        async function fetchData(){
-            const response = await articleService.get();
-            setItems(response);
-        }
-        fetchData()
-    }, [])
+const Article = dynamic(() => import("../article-item"), { suspense: true });
 
-    return (
-        <div>
-            {!items.length && (
-            <>
-                Don't find data
-            </>
-           )}
-           {!!items.length && items.map( (item) =>         
-            <a key={item.id} href={item.url}>
-                {item.category}
-                {item.content}
-                <div style={{width: '100%', height: '20%'}}>
-                <Image 
-                    src={item.image}  
-                    alt={item.title} 
-                    width='250px' 
-                    height='250px'
-                    />
-                </div>
-                {item.title}
-                {item.url}
-                {item.createdAt}
-            </a>
-           )}           
-        </div>
-    );
+const Articles = () => {
+  const [items, setItems] = useState<IArticle[]>([]);
+
+  const fetchData = useCallback(async () => {
+    const data = await articleService.get();
+    setItems(data);
+  }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
+  return (
+    <div className={styles.grid}>
+      <Suspense fallback={<div>Loading...</div>}>
+        {!!items.length && items.map((item) => <Article key={item.id} item={item} />)}
+      </Suspense>
+    </div>
+  );
 };
 
-export default Articles
+export default Articles;

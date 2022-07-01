@@ -1,9 +1,21 @@
+:root {
+  --hover: #009CD9;
+  --disabled: #CFCFCF;
+  --text: #24272A;
+  --description: #3F454A;
+  --hover: #D8AD3D;
+  --error: #B72C2C;
+  --background-blue: #009cd90f;
+
+  --max-lines: 3;
+  --lh: 1.4rem;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', 'Caveat', cursive, sans-serif;
 }
 
 a {
