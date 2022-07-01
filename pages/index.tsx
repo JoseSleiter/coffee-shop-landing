@@ -1,6 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Articles from "../components/articles";
+import TitleWithImg from "../components/title-with-img";
+import styles from "../styles/Home.module.css";
+import bgTitle from "../public/BRUSH-51.png";
+
 import CustomImage from "../components/custom-image";
 import styles from "../styles/Home.module.css";
 import heroBackground from "../public/hero.png";
@@ -19,6 +23,9 @@ const Home: NextPage = () => {
         />
         <title>Coffe Shop</title>
       </Head>
+      <div className={styles.container + " " + styles.fstart}>
+        <TitleWithImg image={bgTitle} title={"Nuestros artículos"} />
+        <Articles />
 
       <div style={{ position: "relative", height: "450", width: "100%" }}>
         <hero className={styles.coverImage}>
@@ -43,6 +50,9 @@ const Home: NextPage = () => {
           <Articles />
         </div>
       </div>
+      <footer>
+        <TitleWithImg image={bgTitle} title={"Contáctanos"} />
+      </footer>
     </>
   );
 };

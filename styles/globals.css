@@ -26,3 +26,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h2{
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
