@@ -1,7 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Articles from "../components/articles";
+import TitleWithImg from "../components/title-with-img";
 import styles from "../styles/Home.module.css";
+import bgTitle from "../public/BRUSH-51.png";
 
 const Home: NextPage = () => {
   return (
@@ -17,8 +19,12 @@ const Home: NextPage = () => {
         <title>Coffe Shop</title>
       </Head>
       <div className={styles.container + " " + styles.fstart}>
+        <TitleWithImg image={bgTitle} title={"Nuestros artículos"} />
         <Articles />
       </div>
+      <footer>
+        <TitleWithImg image={bgTitle} title={"Contáctanos"} />
+      </footer>
     </>
   );
 };

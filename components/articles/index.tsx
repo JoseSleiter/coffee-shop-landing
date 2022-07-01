@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import styles from "../../styles/Home.module.css";
 
-const Article = dynamic(() => import("../article-item"), { suspense: true });
+const Article = dynamic(() => import("./article-item"), { suspense: true });
 
 const Articles = () => {
   const [items, setItems] = useState<IArticle[]>([]);

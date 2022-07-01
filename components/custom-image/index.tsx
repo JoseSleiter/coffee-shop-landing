@@ -6,13 +6,14 @@ interface Props {
   alt: string;
   width?: string;
   height?: string;
+  styles?: any;
 }
 
 const CustomImage = (props: Props) => {
-  const { image, alt, width, height } = props;
+  const { image, alt, width, height, styles } = props;
 
   return (
-    <div style={{ width: "100%" }}>
+    <div className={styles || "image-custom"}>
       <Image src={image} alt={alt} width={width || "270px"} height={height || "204px"} />
     </div>
   );

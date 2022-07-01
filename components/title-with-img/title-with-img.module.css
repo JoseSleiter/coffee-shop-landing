@@ -1,0 +1,28 @@
+
+.bgTitle {
+  border: 1px solid red;
+  position: relative;
+}
+
+.absolute {  
+  position: absolute;
+  bottom: 19px;
+  left: 0px;
+  margin: 0px;
+  width: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .bgTitle h2 {
+    font-size: 32px;
+    position: relative;
+  }
+
+  .absolute {  
+    bottom: -39px;  
+    
+  }
+}
