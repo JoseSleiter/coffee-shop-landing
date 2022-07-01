@@ -158,3 +158,38 @@
   margin-top: 33px;
   margin-bottom: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.coverImage{
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  min-height: 0px;
+  min-width: 0px;
+  z-index: 0;
+  color: inherit;
+  border-style: solid;
+  border-width: 0px;
+  text-align: inherit;
+  object-fit: cover;
+  top: -5px;
+}
