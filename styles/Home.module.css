@@ -1,5 +1,8 @@
 .container {
   padding: 0 2rem;
+  overflow: hidden;
+}
+.containerBlue{
   background-color: var(--background-blue);
 }
 
@@ -173,23 +176,15 @@
 
 
 .coverImage{
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-flex: 0;
-  flex: 0 0 auto;
   position: absolute;
-  height: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
   width: 100%;
-  max-width: 100%;
-  max-height: none;
-  min-height: 0px;
-  min-width: 0px;
-  z-index: 0;
-  color: inherit;
-  border-style: solid;
-  border-width: 0px;
-  text-align: inherit;
-  object-fit: cover;
-  top: -5px;
+  height: 100%;
+  z-index: -1;
+}
+
+.icons{
+  margin: 0em 2em;
 }
