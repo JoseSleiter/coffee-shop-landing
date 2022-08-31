@@ -17,14 +17,14 @@ const CustomImage = (props: Props) => {
   const { image, alt, width, height, layout, objectFit, styles } = props;
 
   return (
-    <div className={styles || "image-custom"}>
+    <div className={styles ?? "image-custom"}>
       <Image
         src={image}
         alt={alt}
-        width={width || "270px"}
-        height={height || "204px"}
-        layout={layout || undefined}
-        objectFit={objectFit || undefined}
+        width={width ?? "270px"}
+        height={height ?? "204px"}
+        layout={layout ?? undefined}
+        objectFit={objectFit ?? undefined}
       />
     </div>
   );

@@ -11,7 +11,7 @@ import icon1 from "../../public/Group-596.png";
 import icon2 from "../../public/Group-597.png";
 import icon3 from "../../public/Group-598.png";
 
-import heroBackground2 from "../../public/BRUSH-32.png";
+// import heroBackground2 from "../../public/BRUSH-32.png";
 const CustomHead = () => {
   return (
     <>

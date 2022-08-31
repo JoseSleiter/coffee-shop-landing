@@ -5,5 +5,7 @@ content: string,
 image: string,
 title: string;
 url: string,
-createdAt: string,
+createdAt: string
 }
+
+export type IListArticle = IArticle[]

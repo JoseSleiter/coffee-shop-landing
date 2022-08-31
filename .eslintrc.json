@@ -4,23 +4,27 @@
         "es2021": true,
         "node": true
     },
-    "extends": [
-        "plugin:react/recommended",
+    "extends": [        
         "standard-with-typescript",
         "prettier"
     ],
     "overrides": [
     ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
+        "project": "./tsconfig.json",
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
+        "@typescript-eslint",
         "react",
         "prettier"
     ],
     "rules": {
-        "indent": "error"
+        "indent": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-floating-promises": "off"
     }
 
 }

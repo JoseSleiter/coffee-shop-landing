@@ -1,14 +1,14 @@
-import axios from 'axios'
-import { IArticle } from '../../types'
+import axios from "axios";
+import { IListArticle } from "../../types";
 
-const get = async (): Promise<IArticle[] | []> => {
+const get = async (): Promise<IListArticle | []> => {
   try {
-    const response = await axios.get('https://5eed24da4cbc340016330f0d.mockapi.io/api/articles')
-    return response.data
+    const response = await axios.get("https://5eed24da4cbc340016330f0d.mockapi.io/api/articles");
+    return response.data;
   } catch (e) {
-    console.log(e)
-    return []
+    console.log(e);
+    return [];
   }
-}
+};
 
-export { get }
+export { get };
