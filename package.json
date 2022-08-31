@@ -35,6 +35,6 @@
     "typescript": "^4.8.2"
   },
   "lint-staged": {
-    "*.ts,*.tsx": "next lint . --cache --fix"
+    "*.tsx": "next lint . --cache --fix"
   }
 }
