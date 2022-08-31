@@ -1,6 +1,6 @@
 import React from "react";
 import { IArticle } from "../../../types";
-import CustomImage from "../../custom-image";
+import CustomImage from "../../custom/image";
 import styles from "../../../styles/Home.module.css";
 
 interface Props {
