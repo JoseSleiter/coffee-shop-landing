@@ -35,6 +35,7 @@
     "typescript": "^4.8.2"
   },
   "lint-staged": {
-    "*.tsx": "next lint . --cache --fix"
+    "*.{ts,tsx}": "next lint --cache --fix",
+    "*.{ts,tsx,css,md}": "prettier --write"
   }
 }
