@@ -6,7 +6,6 @@
   --hover: #D8AD3D;
   --error: #B72C2C;
   --background-blue: #009cd90f;
-
   --max-lines: 3;
   --lh: 1.4rem;
 }
@@ -16,6 +15,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', 'Caveat', cursive, sans-serif;
+  color: var(--description);
+}
+html{
+  background-color: #eee;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -23,18 +30,41 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+h1{
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.5em;
+  line-height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 h2{
   font-family: 'Caveat';
   font-style: normal;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 5em;
   line-height: 38px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+
+@media (max-width: 1280px){
+  /* body {  
+    margin: 56px 90px;
+    max-width: 1280px;
+  } */
+}
+@media (max-width: 720px){
+  /* body {  
+    margin: 56px 90px;
+  } */
+}
+@media (max-width: 480px){
+  /* body {
+    margin: 20px 50px;
+  } */
 }
