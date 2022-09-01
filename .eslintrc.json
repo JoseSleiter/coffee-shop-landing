@@ -5,12 +5,7 @@
     "es2021": true,
     "node": true
   },
-  "extends": [
-    "plugin:@next/next/recommended",
-    "standard-with-typescript",
-    "plugin:prettier/recommended"
-
-  ],
+  "extends": ["plugin:@next/next/recommended", "standard-with-typescript", "plugin:prettier/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json",

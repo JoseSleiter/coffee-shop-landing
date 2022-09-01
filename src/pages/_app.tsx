@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import { AppProps } from "next/app";
-const algo = 1;
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />;

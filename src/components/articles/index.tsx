@@ -1,3 +1,4 @@
+/* eslint @typescript-eslint/no-floating-promises: off */
 import React, { useCallback, useEffect, useState, Suspense } from "react";
 import * as articleService from "../../services/articles";
 import { IListArticle } from "../../types";
