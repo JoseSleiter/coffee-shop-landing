@@ -1,20 +1,20 @@
-import React, { useCallback, useEffect, useState } from "react";
+/* eslint @typescript-eslint/no-floating-promises: off */
+import React, { useCallback, useEffect, useState, Suspense } from "react";
 import * as articleService from "../../services/articles";
-import { IArticle } from "../../types";
-import { Suspense } from "react";
+import { IListArticle } from "../../types";
 import dynamic from "next/dynamic";
 import styles from "../../styles/Home.module.css";
+import { NextPage } from "next";
 
-const Article = dynamic(() => import("./article-item"), { suspense: true });
+const Article = dynamic(async () => await import("./article-item"), { suspense: true });
 
-const Articles = () => {
-  const [items, setItems] = useState<IArticle[]>([]);
+const Articles: NextPage = () => {
+  const [items, setItems] = useState<IListArticle>([]);
 
   const fetchData = useCallback(async () => {
     const data = await articleService.get();
     setItems(data);
   }, []);
-
   useEffect(() => {
     fetchData();
   }, [fetchData]);
@@ -22,7 +22,7 @@ const Articles = () => {
   return (
     <div className={styles.grid}>
       <Suspense fallback={<div>Loading...</div>}>
-        {!!items.length && items.map((item) => <Article key={item.id} item={item} />)}
+        {!(items.length === 0) && items.map((item) => <Article key={item.id} item={item} />)}
       </Suspense>
     </div>
   );

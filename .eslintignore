@@ -1,0 +1,6 @@
+__queuestorage__/
+.husky/
+build/
+next/
+.swc/
+node_modules/

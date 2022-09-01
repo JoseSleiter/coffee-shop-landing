@@ -1,10 +1,10 @@
 :root {
-  --hover: #009CD9;
-  --disabled: #CFCFCF;
-  --text: #24272A;
-  --description: #3F454A;
-  --hover: #D8AD3D;
-  --error: #B72C2C;
+  --hover: #009cd9;
+  --disabled: #cfcfcf;
+  --text: #24272a;
+  --description: #3f454a;
+  --hover: #d8ad3d;
+  --error: #b72c2c;
   --background-blue: #009cd90f;
   --max-lines: 3;
   --lh: 1.4rem;
@@ -14,10 +14,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', 'Caveat', cursive, sans-serif;
+  font-family: "Open Sans", "Caveat", cursive, sans-serif;
   color: var(--description);
 }
-html{
+html {
   background-color: #eee;
 }
 
@@ -30,8 +30,8 @@ a {
   text-decoration: none;
 }
 
-h1{
-  font-family: 'Caveat';
+h1 {
+  font-family: "Caveat";
   font-style: normal;
   font-weight: 700;
   font-size: 7.5em;
@@ -40,8 +40,8 @@ h1{
   align-items: center;
 }
 
-h2{
-  font-family: 'Caveat';
+h2 {
+  font-family: "Caveat";
   font-style: normal;
   font-weight: 700;
   font-size: 5em;
@@ -52,18 +52,18 @@ h2{
   justify-content: center;
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
   /* body {  
     margin: 56px 90px;
     max-width: 1280px;
   } */
 }
-@media (max-width: 720px){
+@media (max-width: 720px) {
   /* body {  
     margin: 56px 90px;
   } */
 }
-@media (max-width: 480px){
+@media (max-width: 480px) {
   /* body {
     margin: 20px 50px;
   } */

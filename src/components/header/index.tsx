@@ -4,15 +4,15 @@ import styles from "./header.module.css";
 import bgTitle from "../../public/BRUSH-32.png";
 
 import CustomImage from "../custom/image";
-import heroBackground from "../../public/hero.png";
+// import heroBackground from "../../public/hero.png";
 
 import logo from "../../public/Logo.png";
 import icon1 from "../../public/Group-596.png";
 import icon2 from "../../public/Group-597.png";
 import icon3 from "../../public/Group-598.png";
 
-import heroBackground2 from "../../public/BRUSH-32.png";
-const CustomHead = () => {
+// import heroBackground2 from "../../public/BRUSH-32.png";
+const CustomHead: React.FC = () => {
   return (
     <>
       <div

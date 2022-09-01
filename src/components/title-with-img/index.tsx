@@ -8,14 +8,14 @@ interface Props {
   title?: string;
 }
 
-const TitleWithImg = (props: Props) => {
+const TitleWithImg: React.FC<Props> = (props: Props) => {
   const { image, title } = props;
 
   return (
     <div className={styles.bgTitle}>
       <h2>
-        <CustomImage styles={styles.absolute} image={image || ""} height="85" width="464" alt={title || "img"} />
-        {title || "insert a text"}
+        <CustomImage styles={styles.absolute} image={image ?? ""} height="85" width="464" alt={title ?? "img"} />
+        {title ?? "insert a text"}
       </h2>
     </div>
   );
