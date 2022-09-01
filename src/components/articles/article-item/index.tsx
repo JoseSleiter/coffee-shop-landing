@@ -7,7 +7,7 @@ interface Props {
   item: IArticle;
 }
 
-const Article = (props: Props) => {
+const Article: React.FC<Props> = (props: Props) => {
   const { item } = props;
 
   return (

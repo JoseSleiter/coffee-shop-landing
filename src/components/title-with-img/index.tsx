@@ -8,7 +8,7 @@ interface Props {
   title?: string;
 }
 
-const TitleWithImg = (props: Props) => {
+const TitleWithImg: React.FC<Props> = (props: Props) => {
   const { image, title } = props;
 
   return (
