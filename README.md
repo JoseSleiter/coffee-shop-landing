@@ -35,7 +35,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Add eslint
 
-
 ```bash
 npx eslint --init
 npm i eslint-config-prettier -D
@@ -52,4 +51,3 @@ How would you like to use ESLint? · style
 ✔ Which style guide do you want to follow? · standard-with-typescript
 ✔ What format do you want your config file to be in? · JSON
 `
-

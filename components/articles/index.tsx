@@ -1,12 +1,13 @@
-import React, { useCallback, useEffect, useState , Suspense } from "react";
+import React, { useCallback, useEffect, useState, Suspense } from "react";
 import * as articleService from "../../services/articles";
 import { IListArticle } from "../../types";
 import dynamic from "next/dynamic";
 import styles from "../../styles/Home.module.css";
+import { NextPage } from "next";
 
 const Article = dynamic(async () => await import("./article-item"), { suspense: true });
 
-const Articles = () => {
+const Articles: NextPage = () => {
   const [items, setItems] = useState<IListArticle>([]);
 
   const fetchData = useCallback(async () => {
