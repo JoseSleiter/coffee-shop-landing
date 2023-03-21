@@ -4,6 +4,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .absolute {  
@@ -14,6 +15,9 @@
 }
 
 @media (max-width: 1280px){
+  .bgTitle{
+    justify-content: center;
+  }
   .bgTitle h2 {
     font-size: 42px;
   }
