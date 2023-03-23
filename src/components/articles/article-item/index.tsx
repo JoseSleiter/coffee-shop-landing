@@ -11,12 +11,12 @@ const Article: React.FC<Props> = (props: Props) => {
   const { item } = props;
 
   return (
-    <div className={styles.card} key={item.id}>
+    <div className={'card'} key={item.id}>
       <CustomImage image={item.image} alt={item.title} />
       <h2>{item.title}</h2>
       <span>{item.category}</span>
       <p>{item.content}</p>
-      <a className={styles.articleButton} href={item.url} target="_blank" rel="noopener noreferrer">
+      <a className={'btn article__btn'} href={item.url} target="_blank" rel="noopener noreferrer">
         see more
       </a>
     </div>
