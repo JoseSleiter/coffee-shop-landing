@@ -10,7 +10,7 @@ interface Props {
   imgStyles?: string;
 }
 
-const TitleWithImg = (props: Props) => {
+const TitleWithImg: React.FC<Props> = (props: Props) => {
   const { image, title, height, width, imgStyles } = props;
 
   return (
@@ -18,8 +18,8 @@ const TitleWithImg = (props: Props) => {
       <h2>
         <CustomImage styles={imgStyles || styles.absolute} image={image || ""} height={height || "85"} width={width || "464"} alt={title || "img"} />
         {title || "insert a text"}
-      </h2>
-    </div>
+      </h2 >
+    </div >
   );
 };
 

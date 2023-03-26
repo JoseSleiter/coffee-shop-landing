@@ -1,7 +1,17 @@
 {
-  "extends": ["next/core-web-vitals", "next", "prettier"],
-  "plugins": ["prettier"],
-  "rules": {
-    "indent": "off"
-  }
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["plugin:@next/next/recommended", "standard-with-typescript", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {}
 }

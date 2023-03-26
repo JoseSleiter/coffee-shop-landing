@@ -1,4 +1,3 @@
-
 .bgTitle {
   border: 1px solid red;
   position: relative;
@@ -7,7 +6,7 @@
   overflow: hidden;
 }
 
-.absolute {  
+.absolute {
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -21,20 +20,19 @@
   .bgTitle h2 {
     font-size: 42px;
   }
-  .absolute {  
+  .absolute {
     bottom: -12px;
   }
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
   .bgTitle h2 {
     font-size: 24px;
   }
-  .absolute {  
+  .absolute {
     width: 50%;
   }
 }
 
-@media (max-width: 480px){
-
+@media (max-width: 480px) {
 }

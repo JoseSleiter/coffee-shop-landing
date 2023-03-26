@@ -2,7 +2,7 @@
   padding: 0 2rem;
   overflow: hidden;
 }
-.containerBlue{
+.containerBlue {
   background-color: var(--background-blue);
 }
 
@@ -65,11 +65,11 @@
   flex-wrap: wrap;
   max-width: 1100px;
 }
-.fcenter{
+.fcenter {
   align-items: center;
   justify-content: center;
 }
-.fstart{
+.fstart {
   align-items: center;
   justify-content: flex-start;
 }
@@ -95,28 +95,28 @@
 }
 
 .card:hover h2,
-.card:hover .articleButton{
+.card:hover .articleButton {
   color: var(--hover);
   display: block;
 }
 
 .card h2 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;  
+  line-height: 24px;
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
   color: var(--text);
 }
 .card span {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 24px;  
+  line-height: 24px;
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
@@ -124,7 +124,7 @@
   margin-bottom: 0.5rem;
 }
 .card p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -148,9 +148,8 @@
   }
 }
 
-
-.articleButton{  
-  font-family: 'Source Sans Pro';
+.articleButton {
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
