@@ -1,10 +1,9 @@
 /* eslint @typescript-eslint/no-floating-promises: off */
-import React, { useCallback, useEffect, useState, Suspense } from "react";
+import { NextPage } from "next";
+import dynamic from "next/dynamic";
+import { Suspense, useCallback, useEffect, useState } from "react";
 import * as articleService from "../../services/articles";
 import { IListArticle } from "../../types";
-import dynamic from "next/dynamic";
-import styles from "../../styles/Home.module.css";
-import { NextPage } from "next";
 
 const Article = dynamic(async () => await import("./article-item"), { suspense: true });
 
@@ -20,7 +19,7 @@ const Articles: NextPage = () => {
   }, [fetchData]);
 
   return (
-    <div className={styles.grid}>
+    <div className={'grid'}>
       <Suspense fallback={<div>Loading...</div>}>
         {!(items.length === 0) && items.map((item) => <Article key={item.id} item={item} />)}
       </Suspense>

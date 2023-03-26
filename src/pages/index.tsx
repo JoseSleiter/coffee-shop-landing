@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
+import bgTitle from "../../public/BRUSH-51.png";
 import Articles from "../components/articles";
 import Head from "../components/custom/head";
 import Header from "../components/header";
 import TitleWithImg from "../components/title-with-img";
-import bgTitle from "../public/BRUSH-51.png";
-import styles from "../styles/Home.module.css";
 
 import { useRouter } from "next/router";
 
@@ -21,7 +20,7 @@ const Home: NextPage = () => {
       <div>
         <TitleWithImg image={bgTitle} title={"Nuestros artículos"} />
         <div className="container" style={{ justifyContent: "center", display: "flex", alignItems: "unset" }}>
-          <div className={styles.container + " " + styles.containerBlue + " " + styles.fstart}>
+          <div className={`container containerBlue fstart`}>
             <Articles />
           </div>
         </div>
