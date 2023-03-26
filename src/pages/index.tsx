@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Articles from "../components/articles";
-import TitleWithImg from "../components/title-with-img";
-import styles from "../styles/Home.module.css";
-import bgTitle from "../public/BRUSH-51.png";
 import Head from "../components/custom/head";
 import Header from "../components/header";
+import TitleWithImg from "../components/title-with-img";
+import bgTitle from "../public/BRUSH-51.png";
+import styles from "../styles/Home.module.css";
 
 import { useRouter } from "next/router";
 
